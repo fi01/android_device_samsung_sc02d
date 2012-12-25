@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p6200/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/sc02d/overlay
 
 # Include common smdk4210-tab configuration
 -include device/samsung/smdk4210-tab/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := p6200,GT-P6200,GT-P6201,GT-P6200L
+TARGET_OTA_ASSERT_DEVICE := sc02d,SC-02D,p6200,GT-P6200,GT-P6201,GT-P6200L
 
-TARGET_KERNEL_CONFIG := cyanogenmod_p6200_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_sc02d_defconfig
