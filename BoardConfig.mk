@@ -22,3 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/sc02d/overlay
 TARGET_OTA_ASSERT_DEVICE := sc02d,SC-02D,p6200,GT-P6200,GT-P6201,GT-P6200L
 
 TARGET_KERNEL_CONFIG := cyanogenmod_sc02d_defconfig
+
+BOARD_HOSTAPD_DRIVER             := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_ath6kl
+CONFIG_DRIVER_NL80211            := y

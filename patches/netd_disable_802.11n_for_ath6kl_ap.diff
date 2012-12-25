@@ -1,0 +1,13 @@
+diff --git a/system/netd/SoftapController.cpp b/system/netd/SoftapController.cpp
+index 9e50f6e..36f9e5f 100644
+--- a/system/netd/SoftapController.cpp
++++ b/system/netd/SoftapController.cpp
+@@ -309,7 +309,7 @@ int SoftapController::setSoftap(int argc, char *argv[]) {
+     }
+ 
+     asprintf(&wbuf, "interface=%s\ndriver=" HOSTAPD_DRIVER_NAME "\nctrl_interface="
+-            "/data/misc/wifi/hostapd\nssid=%s\nchannel=6\nieee80211n=1\n",
++            "/data/misc/wifi/hostapd\nssid=%s\nchannel=6\nieee80211n=0\n",
+             iface, ssid);
+ 
+     if (argc > 5) {
